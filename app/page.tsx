@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className='min-h-screen flex flex-col items-center justify-center'>
-      <div className="justify-center bg-white/60 backdrop-blur-sm border border-white/20 shadow-xl rounded-xl p-12 max-w-2xl mx-auto">
+      <div className="justify-center bg-white/60 backdrop-blur-sm border border-white/20 shadow-xl rounded-xl p-12 max-w-2xl mx-auto -mt-36">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
             Select your Login
