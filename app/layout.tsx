@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
+import Image from "next/image"; // Add this import
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
+        {/* Background Image - covers entire viewport */}
+        <Image
+          src="/Lang_Walker_Academy.avif"
+          alt="Lang Walker Academy background"
+          fill
+          className="object-cover object-center -z-10 opacity-90" // Adjust opacity/positioning as needed
+          priority // Loads immediately for above-the-fold
+          quality={85}
+          sizes="100vw"
+        />
         <SessionProvider>
           {children}
         </SessionProvider>
