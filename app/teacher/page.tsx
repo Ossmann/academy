@@ -2,6 +2,9 @@ import { prisma } from '@/app/lib/prisma'
 import Link from 'next/link'
 import { MdAddCircleOutline } from "react-icons/md";
 import Image from 'next/image';
+import { FaUsers } from "react-icons/fa";
+import RegistrationProgress from '../components/RegistrationProgress';
+
 
 export default async function LandingPage() {
 
@@ -40,19 +43,30 @@ return (
                 alt="School icon"
                 className="flex-shrink-0"
             />
-            Your visit date
+            Your visit date: 16 March 2026
             </div>
 
-            {/* First button - vertically stacked */}
-            <Link href="" className="block border-2 px-6 py-3 mt-8 mx-auto w-fit hover:bg-gray-300">
-            Your Students
-            </Link>
-            
-            {/* Second button - stacks below first */}
-            <Link href="staff/school-registration" className="inline-flex items-center gap-2 border-2 px-6 py-3 mt-4 mx-auto w-fit hover:bg-gray-300">
-            <MdAddCircleOutline className="text-xl" />
-            Register Parents of your Students
-            </Link>
+            <RegistrationProgress />
+
+            <div className="inline-flex gap-4 mt-8">
+              {/* First button */}
+              <Link
+                href=""
+                className="inline-flex items-center justify-center gap-2 border-2 px-6 py-3 w-64 hover:bg-gray-300"
+              >
+                <FaUsers className="text-4xl align-middle" />
+                Your Students
+              </Link>
+
+              {/* Second button */}
+              <Link
+                href="teacher/parents-registration"
+                className="inline-flex items-center justify-center gap-2 border-2 px-6 py-3 w-64 hover:bg-gray-300"
+              >
+                <MdAddCircleOutline className="text-4xl align-middle" />
+                Register Parents of your Students
+              </Link>
+            </div>
         </div>
     </div>
     </main>
