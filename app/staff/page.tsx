@@ -61,7 +61,7 @@ return (
         </Link>
         
         {/* Second button - stacks below first */}
-        <Link href="" className="inline-flex items-center gap-2 border-2 px-6 py-3 mt-4 mx-auto w-fit hover:bg-gray-300">
+        <Link href="staff/school-registration" className="inline-flex items-center gap-2 border-2 px-6 py-3 mt-4 mx-auto w-fit hover:bg-gray-300">
           <MdAddCircleOutline className="text-xl" />
           Invite New School
         </Link>
