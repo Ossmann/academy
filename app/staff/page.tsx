@@ -22,7 +22,7 @@ export default async function LandingPage() {
 return (
   <div className="min-h-screen flex flex-col">
     <main className="flex-1 flex items-center justify-center pt-20 px-4 h-screen">
-      <div className='bg-white/20 backdrop-blur-sm border border-white/20 shadow-xl rounded-xl p-20'>
+      <div className='bg-white/30 backdrop-blur-sm border border-white/20 shadow-xl rounded-xl p-20'>
         <div className="text-center">
             <div className="inline-flex items-center gap-4 mb-8">
             <h1 className="text-5xl md:text-7xl font-bold bg-clip-text">

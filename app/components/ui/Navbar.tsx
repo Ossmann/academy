@@ -15,12 +15,12 @@ export default function Navbar({ userType }: NavbarProps) {
           <Image 
             src="/icons/house.svg" 
             alt="House" 
-            width={24} 
-            height={24}
+            width={26} 
+            height={26}
             className="hover:opacity-80 transition-opacity duration-200"
           />
         </Link>
-        <span className="text-black font-medium pr-10">
+        <span className="text-black font-lg pr-10">
           {userType}
         </span>
       </div>

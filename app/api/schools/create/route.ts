@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({
-      message: 'Teacher and school created successfully',
+      message: 'Created Teacher & School and sent Invite Link(tbd)',
       teacher,
       school
     });

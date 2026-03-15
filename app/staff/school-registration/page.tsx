@@ -55,7 +55,7 @@ export default function AddTeacherPage() {
   return (
     
    <div className='min-h-screen flex flex-col items-center'>
-    <Navbar userType='staff' />
+    <Navbar userType='Staff' />
     <div className='w-120 bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl rounded-xl p-12 mt-10'>
         <h1 className="text-2xl font-bold mb-6">Add a New School</h1>
             
